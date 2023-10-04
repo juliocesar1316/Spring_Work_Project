@@ -1,5 +1,6 @@
 package com.example.work_project.service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -20,11 +21,13 @@ public class TrabalhoService implements TrabalhoInterfaceService {
         if(trabalho==null || 
             trabalho.getTitulo() == null || 
             trabalho.getTitulo().isBlank() || 
-            trabalho.getData() == null || 
             trabalho.getGrupo() == null ||
             trabalho.getGrupo().isBlank()){
               
                 throw new IllegalArgumentException("Existe campos em brancos ou nulos");
+        }
+        if(trabalho.getData() == null){
+            trabalho.setData(LocalDateTime.now());
         }
 
         return trabalhoRepo.save(trabalho);

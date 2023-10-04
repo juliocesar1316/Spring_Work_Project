@@ -1,0 +1,17 @@
+1 - Crir o projeto no spring io
+2 - Criar o repositorio
+3 - Colocar os dois arquivos de configuraççao do gitpod
+4 - git init na pasta
+5 - git add .
+6 - git commit -m "Initial commit"
+7 - git remote add origin (seguir os passo a apasso do github)
+8 - git push origin - u origin master
+9 - gitpod.io/# na url para montar o gitpod
+10 - baixar as extensoes = ja vem instalados
+11 - criar um arquiuvo ddl.ql na raiz do projeto
+12 - Rodar o comando no terminal: mysql <[nome do arq sql]  ex:  mysql <tabela.sql
+13 - mvn clean test
+
+
+
+https://gitpod.io/workspaces
